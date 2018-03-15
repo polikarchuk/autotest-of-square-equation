@@ -15,18 +15,6 @@ public class testLetters {
 
     @Test
     public void litest() {
-        open("https://web-quadratic-equation.herokuapp.com/");
-        $(By.id(Selectors.PARAM_A)).click();
-        $(By.id(Selectors.PARAM_A)).clear();
-        $(By.id(Selectors.PARAM_A)).setValue("a");
-        $(By.id(Selectors.PARAM_B)).click();
-        $(By.id(Selectors.PARAM_B)).clear();
-        $(By.id(Selectors.PARAM_B)).setValue("b");
-        $(By.id(Selectors.PARAM_C)).click();
-        $(By.id(Selectors.PARAM_C)).setValue("c").pressEnter();
-        $(By.linkText(Selectors.SEND)).doubleClick();
-        $(By.className("alert")).click();
-        String result_success = "";
-        $(By.id("result")).shouldHave(text(result_success));
+        TestPattern.execute("a","b","c");
     }
 }

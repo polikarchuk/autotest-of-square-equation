@@ -16,5 +16,7 @@ public class testLetters {
     @Test
     public void litest() {
         TestPattern.execute("a","b","c");
+        String result_success = "";
+        $(By.id("result")).shouldHave(text(result_success));
     }
 }

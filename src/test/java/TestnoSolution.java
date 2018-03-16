@@ -16,5 +16,7 @@ public class TestnoSolution {
     @Test
     public void litest() {
         TestPattern.execute("1","1","1");
+        String result_success = "";
+        $(By.id("result")).shouldHave(text(result_success));
     }
 }

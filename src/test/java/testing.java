@@ -19,6 +19,8 @@ public class testing {
     @Test
     public void equation() {
        TestPattern.execute("1","8","7");
+        String result_success = "x1=-1   x2=-7";
+        $(By.id("result")).shouldHave(text(result_success));
     }
 
 

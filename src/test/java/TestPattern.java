@@ -17,7 +17,6 @@ public class TestPattern {
         $(By.id(Selectors.PARAM_C)).setValue(c).pressEnter();
         $(By.linkText(Selectors.SEND)).doubleClick();
         $(By.className("alert")).click();
-        String result_success = "x1=-1   x2=-7";
-        $(By.id("result")).shouldHave(text(result_success));
+
     }
 }
